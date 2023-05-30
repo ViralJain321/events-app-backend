@@ -1,7 +1,7 @@
 require('dotenv').config();
 var admin = require("firebase-admin");
 
-var serviceAccount = require("./theeventssite-firebase-adminsdk");
+var serviceAccount = require("/etc/secrets/theeventssite-firebase-adminsdk.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
